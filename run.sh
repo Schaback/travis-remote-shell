@@ -10,5 +10,5 @@ unzip ngrok.zip
 } &
 {
     ./ngrok authtoken $NGROK_TOKEN
-    ./ngrok tcp 8888 --authtoken=$NGROK_TOKEN --log=stdout --log-level=debug | grep "tcp.ngrok.io" || true
+    ./ngrok tcp 8888 --authtoken=$NGROK_TOKEN --log=stdout --log-level=debug || true
 } &
